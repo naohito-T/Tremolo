@@ -4,6 +4,8 @@
 
 ```sh
 $ npx create-next-app@latest tremolo-ui --ts
+npx create-next-app@latest tremolo-ui1 --ts with-jest with-jest-app
+
 ```
 
 ## envについて

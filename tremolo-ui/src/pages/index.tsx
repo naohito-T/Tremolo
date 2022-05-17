@@ -3,8 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../assets/styles/Home.module.css";
 
-console.log(`${process.env.NODE_ENV}`);
-
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
