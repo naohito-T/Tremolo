@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppTitle 1`] = `
+<DocumentFragment>
+  <h1
+    class="sc-bczRLJ doLKWM"
+  >
+    message
+  </h1>
+</DocumentFragment>
+`;
