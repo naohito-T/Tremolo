@@ -17,9 +17,9 @@ pre-commit:
     prettier:
       # glob: "*.{js,ts}"
       run: cd tremolo-ui; yarn format
-    eslint:
-      # glob: "*.{js,ts}"
-      run: cd tremolo-ui; yarn eslint
+    # eslint:
+    # glob: "*.{js,ts}"
+    # run: cd tremolo-ui; yarn eslint
     # rubocop:
     #   tags: backend style
     #   glob: "*.rb"
