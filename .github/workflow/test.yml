@@ -26,7 +26,7 @@ on:
       - "docs/**"
       - ".vscode/**"
 jobs:
-  parakeet-e2e-only-test:
+  tremolo-jest-test:
     runs-on: ubuntu-18.04
 
     defaults:
