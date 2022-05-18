@@ -1,6 +1,5 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // サブディレクトリのeslintを自動で読み込む
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
