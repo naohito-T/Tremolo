@@ -9,6 +9,7 @@ import styled from 'styled-components';
 const Title: React.FC<any> = styled.h1`
   color: red;
   font-size: 50px;
+  background-color: #000;
 `;
 
 const AppTitle: React.FC = () => {
