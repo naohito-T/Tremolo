@@ -4,7 +4,6 @@
 
 ```sh
 $ npx create-next-app@latest tremolo-ui --ts
-npx create-next-app@latest tremolo-ui1 --ts with-jest with-jest-app
 
 ```
 
@@ -16,3 +15,9 @@ npx create-next-app@latest tremolo-ui1 --ts with-jest with-jest-app
 >production：アプリケーションがで構築されている場合next build
 >development：アプリケーションがで実行される場合next dev
 >test：アプリケーションがテストされているとき（例jest）
+
+## eslintとprettierについて
+
+eslintはcreate-next-appをした際にnextがよしなに設定をしてくれている。
+
+[thank you](https://zenn.dev/hungry_goat/articles/b7ea123eeaaa44)

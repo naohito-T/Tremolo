@@ -1,5 +1,5 @@
-import "../assets/styles/globals.css";
-import type { AppProps } from "next/app";
+import '../assets/styles/globals.css';
+import type { AppProps } from 'next/app';
 
 console.log(`現状のenv${process.env.NODE_ENV}`);
 
