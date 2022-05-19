@@ -21,3 +21,10 @@ $ npx create-next-app@latest tremolo-ui --ts
 eslintはcreate-next-appをした際にnextがよしなに設定をしてくれている。
 
 [thank you](https://zenn.dev/hungry_goat/articles/b7ea123eeaaa44)
+
+
+## storybook
+
+[参考URL](https://zenn.dev/minguu42/articles/20211226-nextjs-storybook)
+
+`$ npx sb init --builder webpack5`
