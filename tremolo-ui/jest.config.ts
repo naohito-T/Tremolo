@@ -1,3 +1,4 @@
+import type { Config } from '@jest/types';
 import nextJest from 'next/jest';
 
 const createJestConfig = nextJest({
@@ -6,9 +7,13 @@ const createJestConfig = nextJest({
 });
 
 // Add any custom config to be passed to Jest
-const customJestConfig = {
+const customJestConfig: Config.InitialOptions = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  // moduleNameMapperは順番がめちゃくちゃ重要(https://qiita.com/o3c9/items/6dbe508a9647b8a7b397)
   moduleNameMapper: {
+    '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/src/__mocks__/setup/mockFiles.ts',
+    '^.+\\.(scss|css)$': '<rootDir>/src/__mocks__/setup/mockStyles.ts',
     '@/(.*)$': '<rootDir>/src/$1',
     '~/(.*)$': '<rootDir>/src/$1',
   },

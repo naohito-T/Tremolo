@@ -1,20 +1,20 @@
 # pull_requestが送信作成された後、testが実行される
 # Usage: pull_requestにtestを行い、testとapproveされた後でしかmergeできないようにする。
-name: Tremolo Lint Test.
+name: Tremolo-UI Lint Test.
 
 on:
   # 手動Testの設定
-  workflow_dispatch:
-    inputs:
-      # テストするステージ
-      stage:
-        required: false
-        description: "dev or prd"
-        default: "dev"
-      logLevel:
-        description: "Log level"
-        required: true
-        default: "warning"
+  # workflow_dispatch:
+  #   inputs:
+  #     # テストするステージ
+  #     stage:
+  #       required: false
+  #       description: "dev or prd"
+  #       default: "dev"
+  #     logLevel:
+  #       description: "Log level"
+  #       required: true
+  #       default: "warning"
   # 以下のブランチにpull_requestが送られるとtestを実行する
   pull_request:
     branches:
@@ -23,8 +23,10 @@ on:
     # 指定したファイルの変更だけでは実行しない
     paths-ignore:
       - "*.md"
+      - "*.yml"
       - "docs/**"
       - ".vscode/**"
+      - ".github/**"
 jobs:
   tremolo-lint-test:
     runs-on: ubuntu-18.04
