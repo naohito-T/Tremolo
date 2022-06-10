@@ -1,11 +1,13 @@
 import { NextPage, NextPageContext } from 'next';
-
+import DefaultErrorPage from 'next/error';
 interface Props {
   statusCode: number;
 }
 
 const Error: NextPage<Props> = ({ statusCode }) => {
-  return <div>{statusCode}エラーが発生しました</div>;
+  console.log('_error.tsx');
+  return <DefaultErrorPage statusCode={statusCode} title='エラーが発生しました' />;
+  // return <div>{statusCode}</div>;
 };
 
 Error.getInitialProps = async ({ res, err }: NextPageContext) => {

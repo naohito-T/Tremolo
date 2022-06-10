@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import DefaultErrorPage from 'next/error';
 import styled from 'styled-components';
 import { Meta } from '@/components/common';
 // import styles from '@/assets/styles/Home.module.scss';
@@ -13,8 +14,9 @@ const TestDiv = styled.div`
 const TopPage: NextPage = () => {
   return (
     <>
-      <Meta />
-      <TestDiv>test</TestDiv>
+      <DefaultErrorPage statusCode={403} />
+      {/* <Meta />
+      <TestDiv>test</TestDiv> */}
     </>
   );
 };

@@ -1,1 +1,1 @@
-export * from './TopTemplate';
+export * from './top';
