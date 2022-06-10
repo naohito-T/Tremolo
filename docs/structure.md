@@ -7,3 +7,6 @@ firebaseに一貫してホスティング & auth & storageを使用してもよ�
 ホスティングはVercel
 
 [参考URL](https://blog.kimizuy.dev/posts/next-firebase-auth)
+
+## まずはホスティングしてみるか
+

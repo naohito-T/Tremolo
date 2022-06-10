@@ -28,3 +28,7 @@ eslintはcreate-next-appをした際にnextがよしなに設定をしてくれ�
 [参考URL](https://zenn.dev/minguu42/articles/20211226-nextjs-storybook)
 
 `$ npx sb init --builder webpack5`
+
+## firebase
+
+`$ yarn add firebase`

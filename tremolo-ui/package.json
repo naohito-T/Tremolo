@@ -8,20 +8,22 @@
   "scripts": {
     "dev": "next dev -p 10300",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 10300",
     "lint": "next lint --dir src",
     "lint:fix": "yarn lint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,json}'",
     "test": "jest",
     "test:watch": "jest --watch",
-    "storybook": "start-storybook -p 6006",
+    "snap:update": "jest -u",
+    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "firebase": "^9.8.3",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0",
-    "styled-components": "^5.3.5"
+    "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
@@ -55,6 +57,7 @@
     "sass-loader": "^12.6.0",
     "storybook-addon-next-router": "^3.1.1",
     "style-loader": "^3.3.1",
+    "styled-components": "^5.3.5",
     "ts-jest": "^28.0.2",
     "ts-node": "^10.7.0",
     "typescript": "4.6.4"
